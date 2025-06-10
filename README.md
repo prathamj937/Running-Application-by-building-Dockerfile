@@ -11,11 +11,10 @@ This project runs a React app using Docker. It builds the app, serves it using `
 
 ---
 
-## 1. 🛠️ Build Docker Image
+## Make sure you're in the root folder of the project (where the Dockerfile is located).
 
-Make sure you're in the root folder of the project (where the Dockerfile is located).
+## 1. 🛠️ Build Docker Image
 ON BASH: docker build -t my-react-app .
 
 ## 2. 🚀 Run Docker Container
-ON BASH:
-docker run -d -p 3000:3000 --name react-container my-react-app
+ON BASH: docker run -d -p 3000:3000 --name react-container my-react-app
