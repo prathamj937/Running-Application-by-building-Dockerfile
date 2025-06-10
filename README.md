@@ -1,20 +1,22 @@
-# Welcome to Docker
+# 🚀 React App in Docker
 
-This is a repo for new users getting started with Docker.
+This project runs a React app using Docker. It builds the app, serves it using `serve`, and exposes it on port 3000.
 
-You can try it out using the following command.
-```
-docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
-```
-And open `http://localhost:8088` in your browser.
+---
 
-# Building
+## 📦 Prerequisites
 
-Maintainers should see [MAINTAINERS.md](MAINTAINERS.md).
+- Docker Desktop installed and running
+- Internet connection (for downloading dependencies)
 
-Build and run:
-```
-docker build -t welcome-to-docker . 
-docker run -d -p 8088:3000 --name welcome-to-docker welcome-to-docker
-```
-Open `http://localhost:8088` in your browser.
+---
+
+## 1. 🛠️ Build Docker Image
+
+Make sure you're in the root folder of the project (where the Dockerfile is located).
+ON BASH:
+docker build -t my-react-app .
+
+## 2. 🚀 Run Docker Container
+ON BASH:
+docker run -d -p 3000:3000 --name react-container my-react-app
